@@ -1,13 +1,28 @@
-package package4;
-import java.util.Scanner;
+package package5;
+
 public class string2 
 {
 public static void main(String[] args)
 {
-	String s1="Hello";
-	String s2=s1;
-	s2=s1+" World";
-	System.out.println("s1="+s1);
-	System.out.println("s2="+s2);
-}
+
+        int[] Profit = {5, 3, -1, 4, -10, 6, 2};
+
+        int currentProfit = 0;
+        int bestProfit = 0;
+
+        for (int i = 0; i < Profit.length; i++) {
+
+            currentProfit = currentProfit + Profit[i];
+
+            if (currentProfit < 0) {
+                currentProfit = 0;
+            }
+
+            if (currentProfit > bestProfit) {
+                bestProfit = currentProfit;
+            }
+        }
+
+        System.out.println("Best Profit = " + bestProfit);
+    }
 }
