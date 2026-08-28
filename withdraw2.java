@@ -1,0 +1,15 @@
+package package6;
+
+public class withdraw2 
+{
+    public static void main(String[] args) {
+
+        int amount = 10000;
+        int withdraw = 2000;
+
+        while (amount > 0) {
+            amount = amount - withdraw;
+            System.out.println("Withdraw done, balance is: " + amount);
+        }
+    }
+}
